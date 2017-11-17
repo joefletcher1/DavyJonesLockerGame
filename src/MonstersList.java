@@ -15,9 +15,10 @@ public class MonstersList {
 		monsters.add(monster);
 	}
 
-	public boolean checkIfDuplicateCoords(Location location) {
+	public boolean checkIfDuplicateCoords(Location monsterLoc, Location treasureLoc) {
 		for (Monster m : monsters) {
-			if (m.getLocation().getX() == location.getY() && m.getLocation().getY() == location.getY()) {
+			if (m.getLocation().getX() == monsterLoc.getY() && m.getLocation().getY() == monsterLoc.getY()
+					&& m.getLocation().getX() == treasureLoc.getY() && m.getLocation().getY() == treasureLoc.getY()) {
 				return true;
 			}
 		}

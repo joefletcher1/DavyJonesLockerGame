@@ -20,7 +20,7 @@ public class BarrenMooreMain {
 		while (m.getMonsters().size() < numberOfMonsters) {
 			
 			Monster monster = new Monster(gridSize);
-			if(!m.checkIfDuplicateCoords(monster.getLocation())) {
+			if(!m.checkIfDuplicateCoords(monster.getLocation(), t.getLocation())) {
 				m.addMonsterToList(monster);
 			}
 		}
