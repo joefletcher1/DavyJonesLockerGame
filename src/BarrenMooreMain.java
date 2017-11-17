@@ -25,7 +25,7 @@ public class BarrenMooreMain {
 			}
 		}
 		
-		System.out.println(p1.calculateResultant(t));
+		System.out.println("Distance from the treasure: " + p1.calculateResultant(t));
 
 		while (gameEnded != true) {
 			
@@ -40,7 +40,7 @@ public class BarrenMooreMain {
 				System.out.println("You have been swallowed by the Sand Monsters!");
 			}
 			else {
-				System.out.println(p1.calculateResultant(t));
+				System.out.println("Distance from the treasure: " + p1.calculateResultant(t));
 				p1.incNumberOfMoves();
 			}
 		
